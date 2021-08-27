@@ -1,0 +1,46 @@
+.navbar {
+    opacity: 0.9 !important;
+}
+
+.footer {
+    opacity: 0.2 !important;
+}
+
+.nav-link {
+    color: #eee1e1 !important;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+.navbar-brand {
+    color: #e4d8d8 !important;
+    text-shadow: whitesmoke 4px 5px 5px;
+    font-weight: 700;
+}
+
+/* (min-width: 768px) */
+@media (min-width: 768px) {
+    .desktop-navbar {
+        width: 50% !important;
+
+    }
+}
+
+/* (width: 768px) */
+@media (width: 768px) {
+    .dm-navbar {
+        width: 75%;
+    }
+}
+
+/* (max-width: 768px) */
+@media (max-width: 768px) {
+
+
+    .mobile-navbar {
+        width: 100% !important;
+
+    }
+}

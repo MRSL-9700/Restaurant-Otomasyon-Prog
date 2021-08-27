@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap Main Css Framework -->
+    <link rel="stylesheet" href="dist/css/bootstrap.css?v=<?php echo rand(1, 9999); ?>">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css?v=<?php echo rand(1, 9999); ?>">
+
+    <!-- Bootstrap Grid Css Framework -->
+    <link rel="stylesheet" href="dist/css/bootstrap-grid.css?v=<?php echo rand(1, 9999); ?>">
+    <link rel="stylesheet" href="dist/css/bootstrap-grid.min.css?v=<?php echo rand(1, 9999); ?>">
+
+    <!-- Bootstrap Reboot Css Framework -->
+    <link rel="stylesheet" href="dist/css/bootstrap-reboot.css?v=<?php echo rand(1, 9999); ?>">
+    <link rel="stylesheet" href="dist/css/bootstrap-reboot.min.css?v=<?php echo rand(1, 9999); ?>">
+
+    <link rel="stylesheet" href="dist/css/button.css?v=<?php echo rand(1, 9999); ?>">
+    <!--https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark/dark.css-->
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark/dark.css?v=<?php echo rand(1, 9999); ?>">-->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bootstrap-4/bootstrap-4.css?v=<?php echo rand(1, 9999); ?>">
+
+    <style type="text/css">
+        .loader {
+            position: absolute;
+            top: 30%;
+            bottom: 30%;
+            left: 45%;
+            right: 45%;
+            z-index: 99;
+            /* efektin arkada kalmadığından emin oluyoruz */
+        }
+    </style>
+</head>
+
+<body style="">
+    <div id="preloader">
+        <div id="loader" class="loader">
+            <div id="loader-logo" class="loader-logo">
+                <svg width="9em" height="5em" viewBox="0 0 16 16"
+                    class="bi bi-app-indicator text-danger mx-auto mt-5 mb-3" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z">
+                    </path>
+                    <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                </svg>
+            </div>
+            <div id="loader-circle" class="loader-circle">
+                <svg width="12em" height="5.5em" version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
+                    enable-background="new 0 0 0 0" xml:space="preserve" style="display:block;">
+                    <circle fill="#dc3545" stroke="none" cx="6" cy="50" r="6">
+                        <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.1" />
+                    </circle>
+                    <circle fill="#dc3545" stroke="none" cx="26" cy="50" r="6">
+                        <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.2" />
+                    </circle>
+                    <circle fill="#dc3545" stroke="none" cx="46" cy="50" r="6">
+                        <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.3" />
+                    </circle>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(window).load(function () { // makes sure the whole site is loaded
+
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({
+                'overflow': 'visible'
+            });
+        });
+        $(window).ready(function () {
+            $('.loader').css("display", "none");
+        })
+    </script>
+</body>
+
+</html>

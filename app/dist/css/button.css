@@ -1,0 +1,28 @@
+.white-black {
+    background-image: linear-gradient(135deg, #ffffff 0%, #030003 55%);
+    color: #ff0000 !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.white-red {
+    background-image: linear-gradient(135deg, #ffffff 0%, #ff0000 55%) !important;
+    color: #000000 !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.black-red {
+    background-image: linear-gradient(135deg, #000000 0%, #ff0000 100%);
+    color: white !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hide {
+    display: none;
+}

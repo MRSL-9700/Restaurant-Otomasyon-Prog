@@ -1,0 +1,42 @@
+figure.filtre img {
+    vertical-align: middle;
+    -webkit-filter: grayscale(100%) contrast(0.9);
+    -moz-filter: grayscale(100%) contrast(0.9);
+    filter: grayscale(100%) contrast(0.9);
+}
+
+/*Figure elemanına çerçeve tanımını katalım. */
+figure.filtre {
+    position: relative;
+    display: inline-table;
+    margin: 0;
+}
+
+/*Şimdi de aynı öğeye :after tanımı ile perde atayalım. */
+
+figure.filtre:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .5;
+}
+
+.white-black:after {
+    background-color: #ffffff;
+    background-image: linear-gradient(135deg, #ffffff 0%, #030003 55%);
+
+}
+
+.white-red:after {
+    background-image: linear-gradient(135deg, #ffffff 0%, #ff0000 55%);
+
+}
+
+.black-red:after {
+    background-image: linear-gradient(135deg, #000000 0%, #ff0000 100%);
+
+}
